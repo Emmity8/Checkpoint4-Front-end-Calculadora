@@ -8,6 +8,19 @@ const CalculadoraBotoes = () => {
     setInput((prev) => prev + valor);
   };
 
+  const limpar = () => {
+    setInput("");
+    setResultado(null);
+  };
+
+  const calcular = () => {
+    try {
+      setResultado(eval(input));
+    } catch {
+      setResultado("Erro");
+    }
+  };
+
 };
 
 export default CalculadoraBotoes;
