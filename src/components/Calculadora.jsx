@@ -56,7 +56,6 @@ const CalculadoraBotoes = () => {
       </div>
     </div>
   );
-
 };
 
 export default CalculadoraBotoes;
